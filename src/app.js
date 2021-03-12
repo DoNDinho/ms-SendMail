@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 // Configurando rutas
 app.use(router);
 
-// Iniciando servidor
+// Iniciando servidor.
 app.listen(port, () => {
     logger.info('Servidor en puerto', port);
 });
