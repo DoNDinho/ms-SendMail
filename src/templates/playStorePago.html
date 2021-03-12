@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Itaú Personas</title>
+        <style type="text/css">
+            a:link,
+            a:visited,
+            a:hover,
+            a:active {
+                text-decoration: none;
+                color: #595959;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+            }
+        </style>
+    </head>
+
+    <body bgcolor="#EEEEEE">
+        <table width="550" align="center">
+            <tbody>
+                <tr>
+                    <td>
+                        <table cellpadding="0" cellspacing="0" border="0" width="550" style="background: #383e45">
+                            <tbody>
+                                <tr>
+                                    <td width="20px">&nbsp;</td>
+                                    <td width="40px" height="40px"><img width="60px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/PSX-Console-wController.png/1200px-PSX-Console-wController.png" alt="Itaú" style="display: block" /></td>
+                                    <td style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #ffffff; font-weight: bold"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table cellpadding="0" cellspacing="0" border="0" width="550" align="center" style="background: #ffffff">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table cellpadding="0" cellspacing="0" border="0" width="510" align="center">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #595959; padding: 10px 0 10px 0"><span id="">{{.diaMesAnho}}</span></td>
+                                                    <td align="right" style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #595959; padding: 10px 0 10px 0"><span id="">{{.horaMinuto}}</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table cellpadding="0" cellspacing="0" border="0" width="510" align="center">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="90px" height="40px" align="Center" style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #595959; font-weight: bold">
+                                                        <h3>Comprobante de pago PlayStore<br /></h3>
+                                                        <br />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table cellpadding="0" cellspacing="0" border="0" width="510" align="center" style="padding-top: 5px">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="color: #595959; font-family: Arial, Helvetica, sans-serif; font-size: 12px; padding-bottom: 30px">Estimado {{.nombreUsuario}},</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="color: #595959; font-family: Arial, Helvetica, sans-serif; font-size: 12px; padding-bottom: 30px">
+                                                        Has generado una compra por un monto total de <strong>${{.montoTotal}}</strong>. A continuación te encontrarás con el detalle de la compra
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table cellpadding="0" cellspacing="0" border="0" width="510" align="center" style="border-top: 1px solid #cccccc">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 20px; color: #383e45; padding-bottom: 20px"><strong>Articulo</strong></td>
+                                                    <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 20px; color: #383e45; padding-bottom: 20px"><strong>Nombre</strong></td>
+                                                    <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 20px; color: #383e45; padding-bottom: 20px"><strong>Precio</strong></td>
+                                                    <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 20px; color: #383e45; padding-bottom: 20px"><strong>Cantidad</strong></td>
+                                                </tr>
+                                                {{.listaItems}}
+                                            </tbody>
+                                        </table>
+
+                                        <table cellpadding="0" cellspacing="0" border="0" width="510" align="center" style="padding-top: 14px">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="color: #595959; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; padding: 10px 0 5px 0; border-top: 1px solid #cccccc">Recuerda</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="color: #595959; font-family: Arial, Helvetica, sans-serif; font-size: 12px; padding-bottom: 30px">Este e-mail fue generado automáticamente por PlayStore, por favor no respondas este mensaje.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table cellpadding="0" cellspacing="0" border="0" width="550" style="background: #383e45">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="background: #383e45; color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 12px; padding: 10px 10px 10px 10px; margin: 10px 0 0 0; border-top: 1px solid #cccccc">
+                                                        <span style="float: left; padding-right: 200px"><strong>Servicio al cliente</strong><br />600 200 100</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
