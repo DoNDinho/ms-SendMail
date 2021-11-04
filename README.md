@@ -21,6 +21,9 @@ _Crea un archivo .env con las siguientes variables:_
 -   `PORT`: Puerto del servidor
 -   `MAIL_USER`: Email configurado para enviar correo
 -   `MAIL_PASSWORD`: Password de email configurado
+-   `MAIL_HOST`: Host del servidor de correo
+-   `MAIL_PORT`: Puerto del servidor de correo
+-   `MAIL_SECURE`: Si se requiere enviar verificacion SSL
 
 _Ejecuta el servidor:_
 
